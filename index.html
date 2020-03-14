@@ -175,12 +175,17 @@
       
         <h1 id="自制密码管理系统"><a href="#自制密码管理系统" class="headerlink" title="自制密码管理系统"></a><em>自制密码管理系统</em></h1><p>今天是2020年3月14日，我今天完成了<a href="https://www.coursera.org/learn/python/home/welcome" target="_blank" rel="noopener">coursera</a>上密歇根大学的python数据库的课程，借此机会，我想自己开发一款密码管理系统。我的目的是想把数据存到自己的服务器上，以保护我自己的隐私，避免审查。但由于我目前只学到本地的操作，所以只能先更新这部分。<br>以下文字就是我搭建这个系统的历程。Let’s go for it!</p>
 <hr>
+<p>我制作密码管理系统分为以下几个阶段：</p>
 <ul>
 <li>准备阶段</li>
+<li>编程阶段</li>
+<li>调试阶段</li>
 </ul>
 <hr>
-<h2 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h2><h3 id="1-设置开发环境"><a href="#1-设置开发环境" class="headerlink" title="1. 设置开发环境"></a>1. 设置开发环境</h3><p>  <strong><em>python：</em></strong><br>   这个毋庸置疑啦，既然是用python开发管理系统，自然要用python。我选择的IDLE是pycharm。<br>   下载地址：<a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/</a><br>  <strong><em>数据库：</em></strong><br>   由于课程的原因，我的老师推荐我们使用SQLite DB Browse<br>   下载地址：<a href="https://sqlitebrowser.org/dl/" target="_blank" rel="noopener">https://sqlitebrowser.org/dl/</a><br>   在这里出现了问题。当天我的梯子不稳定，导致下载地址迟迟打不开。于是我就选择了brew安装，因为即使当时不用，以后也会用到。可是又出现了问题，terminal键入命令后error（7）connect refused。<br>   <code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</code><br>   在谷歌一下后，我重新安装了xcode的库，因为网络问题，花了一个小时的时间，结果原因并不是这个，真正的原因还是梯子不稳定，所以，我还是劝大家 <strong>选一个好用的梯子！</strong></p>
-<h3 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h3>
+<h2 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h2><h3 id="1-设置开发环境"><a href="#1-设置开发环境" class="headerlink" title="1. 设置开发环境"></a>1. 设置开发环境</h3><p>  <strong><em>python：</em></strong><br>   这个毋庸置疑啦，既然是用python开发管理系统，自然要用python。我选择的IDLE是pycharm。<br>   下载地址：<a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/</a></p>
+<p>  <strong><em>数据库：</em></strong><br>   由于课程的原因，我的老师推荐我们使用SQLite DB Browse<br>   下载地址：<a href="https://sqlitebrowser.org/dl/" target="_blank" rel="noopener">https://sqlitebrowser.org/dl/</a><br>   在这里出现了问题。当天我的梯子不稳定，导致下载地址迟迟打不开。于是我就选择了brew安装，因为即使当时不用，以后也会用到。可是又出现了问题，terminal键入命令后出现错误：error（7）connect refused。<br>   <code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</code><br>   在谷歌一下后，我重新安装了xcode的库，因为网络问题，花了一个小时的时间。结果原因并不是这个，真正的原因还是梯子不稳定，所以，我还是劝大家 <strong>选一个好用的梯子！</strong></p>
+<h3 id="2-流程规划"><a href="#2-流程规划" class="headerlink" title="2.流程规划"></a>2.流程规划</h3><p>在设置完开发环境后，我需要绘制一幅流程图，以便梳理思路，更好的输入代码。大概的顺序就是：1.输入网站名称2.判断是否存在于库中3.作出不同反应。大致如下：</p>
+<h2 id="编程阶段"><a href="#编程阶段" class="headerlink" title="编程阶段"></a>编程阶段</h2>
       
 
       
@@ -530,5 +535,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"live2d-widget-model-haruto"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
